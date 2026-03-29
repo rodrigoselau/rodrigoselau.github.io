@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <!-- Network Background Animation -->
+    <div id="network-bg" class="network-bg"></div>
+
     <header id="header">
         <nav class="container">
             <div class="logo">
@@ -36,17 +39,37 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <p class="hero-pre">Hi, my name is</p>
-                <h1 class="hero-name">Rodrigo Silveira</h1>
-                <h2 class="hero-title">Network Engineer | ISP | Automation | Future Cloud Architect</h2>
-                <p class="hero-description">
-                    Experienced in ISP infrastructure, MPLS, BGP, VoIP, and network automation. 
-                    Building scalable and intelligent network solutions.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="hero-pre">Hi, my name is</p>
+                    <h1 class="hero-name">Rodrigo Silveira</h1>
+                    <h2 class="hero-title">Network Engineer | ISP | Automation</h2>
+                    <p class="hero-description">
+                        Building scalable, intelligent network solutions with BGP, MPLS, and Python-driven automation.
+                        <strong>Moving packets from A to B with precision.</strong>
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Terminal Window -->
+                <div class="terminal-container">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="terminal-title">bash — 80×24</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div id="terminal-content"></div>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -61,16 +84,19 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I am a results-oriented Network Engineer with a strong background in ISP environments. 
-                            My core expertise lies in designing and maintaining complex network infrastructures using protocols like 
+                            I am a results-oriented Network Engineer with a strong background in ISP environments.
+                            My core expertise lies in designing and maintaining complex network infrastructures using
+                            protocols like
                             <strong>BGP, MPLS, and L2/L3 VPNs</strong>.
                         </p>
                         <p>
-                            I have a deep interest in <strong>Linux systems</strong> and the power of <strong>Automation</strong>. 
-                            I leverage tools like <strong>Ansible and Python</strong> to streamline operations and ensure network reliability.
+                            I have a deep interest in <strong>Linux systems</strong> and the power of
+                            <strong>Automation</strong>.
+                            I leverage tools like <strong>Ansible and Python</strong> to streamline operations and
+                            ensure network reliability.
                         </p>
                         <p>
-                            Currently, I am expanding my horizons into <strong>Cloud Architecture (AWS)</strong>, 
+                            Currently, I am expanding my horizons into <strong>Cloud Architecture (AWS)</strong>,
                             aiming to bridge the gap between traditional networking and modern cloud-native solutions.
                         </p>
                     </div>
@@ -140,14 +166,16 @@
                         <div class="project-content">
                             <span class="project-tag">Networking & Software</span>
                             <h3>DocFusion</h3>
-                            <p>A documentation platform for technical environments focused on organization and automation of technical documentation.</p>
+                            <p>A documentation platform for technical environments focused on organization and
+                                automation of technical documentation.</p>
                             <div class="project-tech">
                                 <span>Node.js</span>
                                 <span>MongoDB</span>
                                 <span>Python</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i>
+                                    View Code</a>
                             </div>
                         </div>
                     </div>
@@ -156,14 +184,16 @@
                         <div class="project-content">
                             <span class="project-tag">Automation</span>
                             <h3>Network Automation Platform</h3>
-                            <p>Automated provisioning using Ansible for network devices, including backup, validation, and deployment features.</p>
+                            <p>Automated provisioning using Ansible for network devices, including backup, validation,
+                                and deployment features.</p>
                             <div class="project-tech">
                                 <span>Ansible</span>
                                 <span>Python</span>
                                 <span>Cisco/Juniper</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i>
+                                    View Code</a>
                             </div>
                         </div>
                     </div>
@@ -172,14 +202,16 @@
                         <div class="project-content">
                             <span class="project-tag">ISP Infrastructure</span>
                             <h3>ISP Backbone Design</h3>
-                            <p>Real-world experience with MPLS, BGP, and high availability networks for ISP environments.</p>
+                            <p>Real-world experience with MPLS, BGP, and high availability networks for ISP
+                                environments.</p>
                             <div class="project-tech">
                                 <span>MPLS</span>
                                 <span>BGP</span>
                                 <span>High Availability</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i> Portfolio Piece</a>
+                                <a href="https://github.com/rodrigoselau" target="_blank"><i class="fab fa-github"></i>
+                                    Portfolio Piece</a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +250,8 @@
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
-                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                        visions.</p>
                     <div class="contact-links">
                         <a href="mailto:rodrigo@example.com" class="contact-card">
                             <i class="fas fa-envelope"></i>
@@ -246,5 +279,6 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+    </body>
+
 </html>
